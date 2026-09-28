@@ -1,0 +1,15 @@
+[font]
+size = 14.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[cursor.style]
+shape = "Block"
+blinking = "Off"
+
+[general]
+live_config_reload = true
+
+import = ["~/.config/alacritty/themes/kanagawa_dragon.toml"]
