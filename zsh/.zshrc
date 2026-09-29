@@ -18,6 +18,10 @@ zinit light Aloxaf/fzf-tab
 eval "$(starship init zsh)"
 eval "$(deja init zsh)"
 
+# Move by words with Ctrl+Left / Ctrl+Right.
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
 # Load after all other editing widgets.
 zinit light zsh-users/zsh-syntax-highlighting
 
@@ -29,3 +33,7 @@ setopt share_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
