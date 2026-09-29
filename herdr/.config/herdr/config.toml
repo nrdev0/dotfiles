@@ -1,0 +1,9 @@
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+[keys]
+prefix = "ctrl+s"
+
+[experimental]
+pane_history = false
