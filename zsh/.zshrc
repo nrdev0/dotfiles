@@ -1,3 +1,6 @@
+# Neovim official stable installation.
+export PATH="$HOME/.local/opt/nvim-linux-x86_64/bin:$PATH"
+
 # Zinit installation
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
@@ -26,4 +29,3 @@ setopt share_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
-
