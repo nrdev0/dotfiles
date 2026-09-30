@@ -1,4 +1,8 @@
 onboarding = false
+
+[terminal]
+default_shell = "/usr/bin/fish"
+
 [theme]
 name = "catppuccin"
 auto_switch = false
