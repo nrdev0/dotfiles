@@ -30,7 +30,11 @@
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
     "vim.highlightedyank.enable": true,
-    "vim.normalModeKeyBindings": [
+    "vim.handleKeys": {
+        "<C-j>": false, // vscode toggle bottom panel
+        "<C-f>": false // vscode find widget
+    },
+   "vim.normalModeKeyBindings": [
         {
             "before": ["<leader>", "w"],
             "commands": ["workbench.action.files.save"]
