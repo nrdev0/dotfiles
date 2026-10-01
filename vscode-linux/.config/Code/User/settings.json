@@ -1,0 +1,47 @@
+{
+    // general settings
+    "telemetry.telemetryLevel": "off",
+    "chat.disableAIFeatures": true,
+
+    // workbench settings
+    "workbench.startupEditor": "none",
+    "workbench.enableExperiments": false,
+    "workbench.colorTheme": "GitHub Light",
+    "workbench.editor.enablePreview": false,
+
+    // file settings
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "files.insertFinalNewline": true,
+
+    // editor settings
+    "editor.guides.bracketPairs": true,
+    "editor.minimap.enabled": false,
+
+    // file explorer settings
+    "explorer.compactFolders": false,
+
+    // vim settings
+    "editor.lineNumbers": "relative",
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "h"],
+            "commands": [":nohl"]
+        }
+    ],
+}
