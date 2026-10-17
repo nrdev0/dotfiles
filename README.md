@@ -13,3 +13,4 @@ stow --verbose --no-folding --target="$HOME" alacritty herdr tmux
 stow --delete --target="$HOME" alacritty herdr tmux
 ```
 
+[Gruvbox tmux theme](https://github.com/egel/tmux-gruvbox)
