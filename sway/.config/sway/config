@@ -17,7 +17,7 @@ set $rofi_cmd rofi \
 set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 
 ### Output configuration
-output * bg /usr/share/backgrounds/default.jxl fill
+output * bg ~/Pictures/bernardo-bellotto.png fill
 
 output DP-1 {
     mode 2560x1440@240.020Hz
@@ -37,9 +37,12 @@ output HDMI-A-1 {
 
 ### Idle configuration
 exec swayidle -w \
-         timeout 600 'swaylock -f -c 000000' \
-         timeout 900 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f -c 000000'
+  timeout 300 'swaylock -f' \
+  timeout 600 'swaymsg "output * power off"' \
+    resume 'swaymsg "output * power on"' \
+  timeout 1800 'systemctl suspend' \
+  before-sleep 'swaylock -f'
+
 
 ### Input configuration
 input type:pointer {
